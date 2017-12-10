@@ -25,3 +25,10 @@ class Usuario(models.Model):
 
 	def as_tiendas(self):
 		return [tienda.nombre for tienda in self.tiendas.all()]
+
+	def as_tiendas_citys(self, city):
+		result = []
+		for tienda in self.tiendas.all():
+			if tienda.city.id == int(city):
+				result.append(tienda.nombre)
+		return result

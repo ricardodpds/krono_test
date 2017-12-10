@@ -20,9 +20,15 @@ from api_test import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^api_test/users/(?P<nombre>[\w.@+-]+)/$', views.get_users),
-    url(r'^api_test/users/', views.get_error),
+    #Endpoint1
+    url(r'^api_test/users/(?P<shopid>\d+)/$', views.get_users),
+    #Endpoint2    
     url(r'^api_test/shops/(?P<userid>\d+)/$', views.get_tiendas_by_id),
+    #Endpoint3
+    url(r'^api_test/shops_city/user=(?P<user>\d+)&city=(?P<city>\d+)/$', views.get_tiendas_by_city),
+    #Errores
+    url(r'^api_test/shops_city/', views.get_error_shops_city),
+    url(r'^api_test/users/', views.get_error_id),
     url(r'^api_test/shops/', views.get_error_id),
 ]
 
