@@ -30,7 +30,8 @@ Desarrollador: **Ricardo Pereira**
 
     Donde una tienda posee solo una ciudad y un usuario está registrado en una o más tiendas.
 
-    Se implementó de esa manera para establecer la relación de uno a muchos (ciudad => tiendas) y la relación de muchos a muchos (tiendas <=> usuarios).
+    Se implementó de esa manera para establecer la relación de uno a muchos (ciudad => tiendas)
+    y la relación de muchos a muchos (tiendas <=> usuarios).
 
 ---
 
@@ -53,9 +54,10 @@ Desarrollador: **Ricardo Pereira**
 ---
 
 
-##**Ejemplos:**
+## **Ejemplos:**
 
-###Endpoint 1
+### Endpoint 1
+
 *URL*: **http://127.0.0.1:8000/api_test/users/1/**
 
 *Method*: **GET**
@@ -64,7 +66,8 @@ Desarrollador: **Ricardo Pereira**
          
         [{"nombre": "Ricardo", "email": "ricardo@hotmail.com"}, {"nombre": "Marcos", "email": "marcos@gmail.com"}, {"nombre": "Joao", "email": "joao@gmail.com"}]
 
-###Endpoint 2
+### Endpoint 2
+
 *URL*: **http://127.0.0.1:8000/api_test/shops/1/**
 
 *Method*: **GET**
@@ -74,7 +77,8 @@ Desarrollador: **Ricardo Pereira**
         ["Todo a mil", "Facilito", "Alfombras Shop"]
 
 
-###Endpoint 3
+### Endpoint 3
+
 *URL*: **http://127.0.0.1:8000/api_test/shops_city/user=6&city=4/**
 
 *Method*: **GET**
