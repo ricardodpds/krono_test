@@ -50,6 +50,9 @@ Desarrollador: **Ricardo Pereira**
     Method: GET
     Response: ["shop_name1", "shop_name2", ... "shop_nameN"]
 
+---
+
+
 ##**Ejemplos:**
 
 ###Endpoint 1
