@@ -39,17 +39,17 @@ Desarrollador: **Ricardo Pereira**
 ### *Obtener todos los usuarios de una tienda*
     URL: http://domain:port/api_test/users/{id_tienda}/
     Method: GET
-    Response: [{ user1 }, {user2}, ... {userN} ]
+    Response: { 'response': [{ user1 }, {user2}, ... {userN} ], 'code': '0 / 1' } 
         
 ### *Obtener todas las tiendas de una ciudad*
     URL: http://domain:port/api_test/shops/{id_user}/
     Method: GET
-    Response: ["shop_name1", "shop_name2", ... "shop_nameN"]
+    Response: { 'response': ["shop_name1", "shop_name2", ... "shop_nameN"], 'code': '0 / 1' } 
 
 ### *Obtener todas las tiendas de una ciudad, asociadas a un usuario*
     URL: http://domain:port/api_test/shops_city/user={id_user}&city={id_city}/
     Method: GET
-    Response: ["shop_name1", "shop_name2", ... "shop_nameN"]
+    Response: { 'response': ["shop_name1", "shop_name2", ... "shop_nameN"], 'code': '0 / 1' }
 
 ---
 
@@ -64,7 +64,7 @@ Desarrollador: **Ricardo Pereira**
 
 *Response*:    
          
-        [{"nombre": "Ricardo", "email": "ricardo@hotmail.com"}, {"nombre": "Marcos", "email": "marcos@gmail.com"}, {"nombre": "Joao", "email": "joao@gmail.com"}]
+        { 'response':  [{"nombre": "Ricardo", "email": "ricardo@hotmail.com"}, {"nombre": "Marcos", "email": "marcos@gmail.com"}, {"nombre": "Joao", "email": "joao@gmail.com"}], 'code': '0' }
 
 ### Endpoint 2
 
@@ -74,7 +74,7 @@ Desarrollador: **Ricardo Pereira**
 
 *Response*:    
          
-        ["Todo a mil", "Facilito", "Alfombras Shop"]
+        { 'response': ["Todo a mil", "Facilito", "Alfombras Shop"], 'code': '0' }
 
 
 ### Endpoint 3
@@ -85,6 +85,6 @@ Desarrollador: **Ricardo Pereira**
 
 *Response*:    
          
-        ["Mercadito", "Licoreros", "Informaticos y mas"]
+        { 'response': ["Mercadito", "Licoreros", "Informaticos y mas"], 'code': '0' } 
 
 
